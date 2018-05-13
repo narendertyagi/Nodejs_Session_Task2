@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="container" style="background-color:grey;text-align:center;width:80%;margin:auto;">
+        <h1 style="margin-bottom:0px;"> Session Management </h1>
+
+    </div>
+    <div class="body" style="border:1px solid grey;width:80%;margin:auto;height:200px;">
+      <% if(session.name) { %>
+        <a href="/logout">  <label style="margin-top:5px;margin-left:95%;"><%= session.name %></label></a>
+
+    <%  } else{ %>
+      <form class="" action="/" method="post">
+        <input type="submit" name="Login" value="Login" style="margin-top:150px;margin-left:45%;">
+
+      </form>
+
+    <%}%>
+
+
+
+    </div>
+
+
+  </body>
+</html>
